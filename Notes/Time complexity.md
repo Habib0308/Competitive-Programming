@@ -24,6 +24,53 @@ O(1)+O(n)+O(1)+O(1)+O(1)
 = O(4+n)
 = O(n)
 ```
+### Complexity classes
+Some common time complexities of algorithms:
+#### O(1)
+A typical constant-time algorithm is a direct formula that calculates the answer.
+#### O(logn)
+A logarithmic algorithm often halves the input size at each step.
+#### O(\sqrt{k})
+A square root algorithm is slower than O(logn) but faster than O(n).
+#### O(n)
+A linear algorithm goes through the input a constant number of times.
+#### O(nlogn)
+This time complexity often indicates that the algorithm sorts the input.
+#### O(nlogn)
+This time complexity often indicates that the algorithm sorts the input, because the time complexity of efficient sorting algorithms is O(nlogn).
+
+Another possibility is that the algorithm uses a data structure where each operation takes O(logn) time.
+#### O(n<sup>2</sup>)
+A quadratic algorithm often contains two nested loops.
+#### O(n<sup>3</sup>)
+A cubic algorithm often contains three nested loops.
+#### O(2<sup>n</sup>)
+This time complexity often indicates that the algorithm iterates through all subsets of the input elements. For example, the subsets of {1,2,3} are ;,
+```
+{1}, {2}, {3}, {1,2}, {1,3}, {2,3} and {1,2,3}.
+```
+#### O(n!)
+This time complexity often indicates that the algorithm iterates through all permutations of the input elements. 
+
+For example, the permutations of
+```
+{1,2,3} are (1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2) and (3,2,1).
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Two Nested Loops ```O(n<sup>2</sup>)```
 ```python
