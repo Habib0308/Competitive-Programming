@@ -11,18 +11,18 @@ For example for the following input:
 ```123 456 9254```
 ```
 # Input -> 10 20 monkey
-a, b, c = raw_input().split(' ')
+a, b, c = input().split(' ')
 print(a, b, c)
 
 # Input with map -> 10 20
-a, b = map(int, raw_input().split(' '))
+a, b = map(int, input().split(' '))
 print(a, b)
 ```
 ## Working with numbers
 ### Integers
 Python has dynamic data type so integers, float are same as variables.
 
-Integers are very easily handled for input and outputm It doesn't matte rif value is either long or short.
+Integers are very easily handled for input and output It doesn't matte rif value is either long or short.
 
 ### Floating point numbers
 The required precision of the answer is usually given in the problem statement.
@@ -40,6 +40,7 @@ if (abs(a-b) < 1e-9):
 ## Shortening code
 * List Comprihentions
 * Lambda expressions
+
 ## Mathematics
 ### Sum Formulas
 ![sum formula](https://github.com/Habib0308/Competitive-Programming/blob/master/images/sum%20formula.png)
@@ -68,7 +69,7 @@ Where a is the first number, b is the last number and the ratio between consecut
 ![harmonic Sum](https://github.com/Habib0308/Competitive-Programming/blob/master/images/harmonic%20sum.png)
 
 
-### Set theory
+### Sets
 ```
 x = set([2, 4, 7])
 a = set([1, 2, 5])
@@ -88,6 +89,25 @@ elements that are in A but not in B.
 ```
 print(a.difference(b))
 ```
+### Logic
+#### NOT
+Opposite of Input
+#### OR
+Anyone is True then True
+#### AND
+All Must be True for answer to be True
+
+#### Imply
+If A is "True" then B is "True"
+
+So if A is False and B is also False then True
+
+![imply gate](https://upload.wikimedia.org/wikipedia/commons/c/cc/IMPLY_ANSI.svg)
+#### XNOR
+If and only if one is True and the other is False then True
+
+![XNOR](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/XNOR_using_NOR.svg/1280px-XNOR_using_NOR.svg.png)
+
 ### Functions
 #### Round up
 ```
@@ -112,3 +132,7 @@ A useful property of logarithms is that log<sub>k</sub>(x) equals the number of 
 import math
 math.log(a,Base)
 ```
+
+Some other articles to read
+
+[20-simple-python-performance-tuning-tips](https://stackify.com/20-simple-python-performance-tuning-tips/)
