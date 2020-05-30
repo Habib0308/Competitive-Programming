@@ -171,6 +171,33 @@ For each call two function calls are envoked. It's similar to the image below, c
 Based on this, the time complexity is
 1+2+4+··· +2n−1 = 2<sup>n−1</sup> = O(2<sup>n</sup>).
 
+### Estimating efficiency
+we can try to guess the required time complexity of the algorithm that solves the problem. The following table contains some useful estimates assuming a time limit of one second.
+
+|input size|required time complexity|
+|--------|--------|
+|n ≤ 10|O(n!)|
+|n ≤ 20|O(2<sup>n</sup>)|
+|n ≤ 500|O(n<sup>3</sup>)|
+|n ≤ 5000|O(n<sup>2</sup>)|
+|n ≤ 10<sup>6</sup>|O(nlogn) or O(n)|
+|n is large|O(1) or O(logn)|
+
+### Maximum subarray sum
+This section discusses a classic problem that has a straightforward O(n<sup>3</sup>) solution. However, by designing a better algorithm, it is possible to solve the problem in O(n<sup>2</sup>) time and even in O(n) time.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
