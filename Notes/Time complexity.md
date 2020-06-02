@@ -185,6 +185,40 @@ we can try to guess the required time complexity of the algorithm that solves th
 
 ### Maximum subarray sum
 This section discusses a classic problem that has a straightforward O(n<sup>3</sup>) solution. However, by designing a better algorithm, it is possible to solve the problem in O(n<sup>2</sup>) time and even in O(n) time.
+#### Problem:
+Find a sub array with maximum sum.
+#### Brute force sollution.
+Find all available sollutions and pick the one.
+```
+best = 0
+for i in arr:
+    for j in arr:
+        sum = 0
+        for k in arr:
+            sum += k
+        best = max(best, sum)
+```
+**O(n<sup>3</sup>)** complexity
+
+```
+best = 0
+for i in arr:
+    sum = 0
+    for j in arr:
+        sum += j
+        best = max(best, sum)
+```
+**O(n<sup>2</sup>)** complexity
+
+```
+best, sum = 0, 0
+for i in arr:
+    sum = max(i, sum + i)
+    best = max(best, sum)
+print(best)
+```
+**O(n)** complexity
+
 
 
 
