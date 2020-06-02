@@ -57,21 +57,6 @@ For example, the permutations of
 {1,2,3} are (1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2) and (3,2,1).
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Two Nested Loops ```O(n<sup>2</sup>)```
 ```python
 for a in range(n):			# O(n)
@@ -127,7 +112,7 @@ O(n), O(n<sup>2</sup>) and O(n). Thus, the total time complexity is O(n<sup>2</s
 ```
 ### Several variables
 Different Inputs are represented differently.
-```
+```python
 def func(arrA, arrB):
     coun=0
     for a in arrA:
@@ -141,7 +126,7 @@ This algorithm has O(a\*b) complexity
 ### Recursion
 The time complexity of a recursive function depends on the number of times the function is called multiplied by the time complexity of a single call.
 #### Example 1:
-```
+```python
 def f(n):
     if (n == 1):
         return 0
@@ -149,7 +134,7 @@ def f(n):
 ```
 The call f(n) causes n function calls, and the time complexity of each call is O(1). Thus, the total time complexity is O(n).
 #### Example 2:
-```
+```python
 def f(n):
     if (n == 1):
         return 0
@@ -189,7 +174,7 @@ This section discusses a classic problem that has a straightforward O(n<sup>3</s
 Find a sub array with maximum sum.
 #### Brute force sollution.
 Find all available sollutions and pick the one.
-```
+```python
 best = 0
 for i in arr:
     for j in arr:
@@ -200,7 +185,7 @@ for i in arr:
 ```
 **O(n<sup>3</sup>)** complexity
 
-```
+```python
 best = 0
 for i in arr:
     sum = 0
@@ -210,7 +195,7 @@ for i in arr:
 ```
 **O(n<sup>2</sup>)** complexity
 
-```
+```python
 best, sum = 0, 0
 for i in arr:
     sum = max(i, sum + i)
